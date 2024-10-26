@@ -38,24 +38,24 @@
 }
 
 .back-button:hover {
-    background-color: #0056b3; /* Darken button on hover for feedback */
+    background-color: #0056b3;
 }
 
 /* Optional: Add a responsive design */
 @media (max-width: 600px) {
     .student-details {
-        padding: 15px; /* Reduce padding on smaller screens */
+        padding: 15px; 
     }
 
     .student-details h3 {
-        font-size: 1.3em; /* Slightly decrease font size */
+        font-size: 1.3em; 
     }
 
     .detail {
-        font-size: 1em; /* Slightly decrease font size */
+        font-size: 1em; 
     }
 
     .back-button {
-        width: 100%; /* Full width on smaller screens */
+        width: 100%;
     }
 }
