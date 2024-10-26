@@ -1,0 +1,61 @@
+/* StudentDetails.css */
+.student-details {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow for depth */
+    max-width: 600px; /* Limit the width for better readability */
+    margin: 20px auto; /* Center the details container */
+}
+
+.student-details h3 {
+    margin-bottom: 10px;
+    color: #007bff;
+    font-size: 1.5em; /* Increase font size for prominence */
+}
+
+.detail {
+    margin: 10px 0;
+    font-size: 1.1em; /* Slightly increase font size for details */
+    color: #555; /* Softer color for better contrast */
+}
+
+/* Add hover effect for detail fields */
+.detail:hover {
+    background-color: #f0f8ff; /* Light background on hover */
+    cursor: pointer; /* Change cursor to indicate interactivity */
+}
+
+/* Back button styles */
+.back-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* Space above the button */
+}
+
+.back-button:hover {
+    background-color: #0056b3; /* Darken button on hover for feedback */
+}
+
+/* Optional: Add a responsive design */
+@media (max-width: 600px) {
+    .student-details {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    .student-details h3 {
+        font-size: 1.3em; /* Slightly decrease font size */
+    }
+
+    .detail {
+        font-size: 1em; /* Slightly decrease font size */
+    }
+
+    .back-button {
+        width: 100%; /* Full width on smaller screens */
+    }
+}

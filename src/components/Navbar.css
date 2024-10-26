@@ -1,0 +1,37 @@
+/* Navbar.css */
+.menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    display: none; /* Hide by default */
+}
+
+.menu {
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+}
+
+.menu.open {
+    display: flex; /* Show when open */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .navbar {
+        padding: 10px; /* Reduced padding on smaller screens */
+    }
+
+    .navbar a {
+        display: none; /* Hide links by default */
+    }
+
+    .menu-toggle {
+        display: block; /* Show toggle button */
+    }
+
+    .menu.open a {
+        display: block; /* Show links when menu is open */
+    }
+}
