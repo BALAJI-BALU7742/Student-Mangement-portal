@@ -11,15 +11,15 @@ const EditStudentForm = () => {
     const student = students.find(student => student.id === Number(id));
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
-    const [address, setAddress] = useState(''); // New state for address
-    const [phone, setPhone] = useState(''); // New state for phone number
+    const [address, setAddress] = useState(''); 
+    const [phone, setPhone] = useState(''); 
 
     useEffect(() => {
         if (student) {
             setName(student.name);
             setEmail(student.email);
-            setAddress(student.address); // Set address if it exists
-            setPhone(student.phone); // Set phone if it exists
+            setAddress(student.address); 
+            setPhone(student.phone); 
         }
     }, [student]);
 
@@ -29,8 +29,8 @@ const EditStudentForm = () => {
             id: student.id, 
             name, 
             email, 
-            address, // Include address in the update
-            phone // Include phone number in the update
+            address,
+            phone 
         });
         navigate('/students'); // Redirect to student list after editing
     };
